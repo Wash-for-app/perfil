@@ -1,14 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-
-      <ion-button>
-      <ion-back-button></ion-back-button>
-    </ion-button>
-    <span>Perfil</span>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar color="primary" class="cabecalho">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/folder/mapa"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Perfil</ion-title>
+</ion-toolbar>  
 
 <div  id ="avatar" class="ion-padding-top ion-text-center">
 <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar" (click)="photoService.addNewToGallery()">
@@ -32,13 +27,13 @@
  
   
       <ion-item><ion-icon name="mail-outline" ></ion-icon>
-        <ion-input name="email" >example@ionic.com</ion-input>
+        <ion-input name="email" placeholder="example@ionic.com"></ion-input>
       </ion-item>
   
   
       <ion-item class="ion-align-items-center">
         <ion-icon name="call-outline"></ion-icon>
-        <ion-input type="tel" name="phone" > +55(00)0000-0000</ion-input>
+        <ion-input type="tel" name="phone" placeholder="+55(00)0000-0000"></ion-input>
       </ion-item>
   
     
