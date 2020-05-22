@@ -17,6 +17,11 @@ const routes: Routes = [
     path: 'servico',
     loadChildren: () => import('./servico/servico.module').then( m => m.ServicoPageModule)
   },
+  {
+    path: 'sessao-fotos',
+    loadChildren: () => import('./sessao-fotos/sessao-fotos.module').then( m => m.SessaoFotosPageModule)
+  },
+
 
 ];
 
