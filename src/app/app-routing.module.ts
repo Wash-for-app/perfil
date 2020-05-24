@@ -20,7 +20,11 @@ const routes: Routes = [
   {
     path: 'sessao-fotos',
     loadChildren: () => import('./sessao-fotos/sessao-fotos.module').then( m => m.SessaoFotosPageModule)
+  },  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
+
 
 
 ];

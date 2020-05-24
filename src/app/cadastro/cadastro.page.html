@@ -1,0 +1,40 @@
+<ion-toolbar color="primary" class="cabecalho">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder/mapa"></ion-back-button>
+    </ion-buttons>
+  <ion-title>Cadastro Lava-Jato</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <p class="texto1">Quer seu lava-jato cadastrado no W@sh?<br>
+    Preencha os campos abaixo e iremos avaliar suas informações.
+  </p>
+ <p class = "obrigatorio">*Obrigatório</p>
+  <table>
+    <h1 class="h1">Nome do Responsável*</h1>
+    <tr>
+      <td><ion-input placeholder="Digite seu nome" class="input"></ion-input></td>
+    </tr>
+    <h1 class="h1">Email*</h1>
+    <tr>
+      <td><ion-input placeholder="Digite seu e-mail" class="input"></ion-input></td>
+    </tr>
+    <h1 class="h1">Endereço Lava-Jato*</h1>
+    <tr>
+      <td><ion-input placeholder="Insira o endereço do lava-jato" class="input"></ion-input></td>
+    </tr>
+    <h1 class="h1">CPF/CNPJ*</h1>
+    <tr>
+      <td><ion-input placeholder="Digite seu CPF ou CNPJ" class="input"></ion-input></td>
+    </tr>
+    <h1 class="h1">Telefone*</h1>
+    <tr>
+      <td><ion-input placeholder="(XX) XXXXX-XXXX" class="input"></ion-input></td>
+    </tr>
+</table>
+<ion-footer>
+  <ion-buttons class="botao">
+    <ion-button base href="/lava-servico"><ion-text class="texto">Continuar</ion-text></ion-button>
+  </ion-buttons>
+</ion-footer>
+</ion-content>
