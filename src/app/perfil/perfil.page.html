@@ -1,0 +1,45 @@
+<ion-toolbar color="primary" class="cabecalho">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/folder/mapa"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Perfil</ion-title>
+</ion-toolbar>  
+<div >
+<div  id ="avatar" class="ion-padding-top ion-text-center">
+<img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar" (click)="photoService.addNewToGallery()">
+</div>
+<div>
+  <ion-grid>
+    <ion-row>
+    <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+      <ion-img src="{{ photo.base64 ? photo.base64 : photo.webviewPath }}"(click)="showActionSheet(photo, position)"></ion-img>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+</div>
+
+    <ion-content class="ion-padding">
+      <ion-item class="ion-align-items-center">
+        <h2><ion-label stacked class="ion-align-items-center">Tchulengo Jr.</ion-label></h2>
+      </ion-item>
+
+      <ion-list>
+ 
+  
+      <ion-item><ion-icon name="mail-outline" ></ion-icon>
+        <ion-input name="email" placeholder="example@ionic.com"></ion-input>
+      </ion-item>
+  
+  
+      <ion-item class="ion-align-items-center">
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-input type="tel" name="phone" placeholder="+55(00)0000-0000"></ion-input>
+      </ion-item>
+  
+    
+    </ion-list>
+  
+
+  
+  </ion-content>

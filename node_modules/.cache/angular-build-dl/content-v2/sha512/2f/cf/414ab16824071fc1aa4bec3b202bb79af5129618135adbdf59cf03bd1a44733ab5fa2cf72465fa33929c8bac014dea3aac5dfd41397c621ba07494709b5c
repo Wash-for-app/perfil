@@ -1,0 +1,141 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["servico-servico-module"],{
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/servico/servico.page.html":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/servico/servico.page.html ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-toolbar color=\"primary\" class=\"cabecalho\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button defaultHref=\"/home\"></ion-back-button>\r\n    </ion-buttons>\r\n  <ion-title>Serviços</ion-title>\r\n</ion-toolbar>\r\n\r\n\r\n<ion-content>\r\n  <h1>Selecione o(s) Serviço(s)</h1>\r\n  <div class=\"checkbox\">\r\n    <ion-checkbox class=\"p\"></ion-checkbox> Delivery<br>\r\n    <ion-checkbox class=\"p\"></ion-checkbox> Geral<br>\r\n    <ion-checkbox class=\"p\"></ion-checkbox> Geral com Cera<br>\r\n    <ion-checkbox class=\"p\"></ion-checkbox> Pretinho<br>\r\n    <ion-checkbox class=\"p\"></ion-checkbox> Ducha<br>\r\n    <ion-checkbox></ion-checkbox> Aspirar<br>\r\n    <ion-checkbox></ion-checkbox> Painel<br>\r\n    <ion-checkbox></ion-checkbox> Lavagem parte de baixo<br>\r\n    <ion-checkbox></ion-checkbox> Motor<br>\r\n    <ion-checkbox></ion-checkbox> Forro<br>\r\n    <ion-checkbox></ion-checkbox> Guariba<br>\r\n    <ion-checkbox></ion-checkbox> Polimento<br>\r\n  </div>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-buttons class=\"botao\">\r\n    <ion-button defaultHref=\"/tela-final\"><ion-text class=\"texto\">Continuar</ion-text></ion-button>\r\n  </ion-buttons>\r\n</ion-footer>\r\n");
+
+/***/ }),
+
+/***/ "./src/app/servico/servico-routing.module.ts":
+/*!***************************************************!*\
+  !*** ./src/app/servico/servico-routing.module.ts ***!
+  \***************************************************/
+/*! exports provided: ServicoPageRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicoPageRoutingModule", function() { return ServicoPageRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _servico_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./servico.page */ "./src/app/servico/servico.page.ts");
+
+
+
+
+const routes = [
+    {
+        path: '',
+        component: _servico_page__WEBPACK_IMPORTED_MODULE_3__["ServicoPage"]
+    }
+];
+let ServicoPageRoutingModule = class ServicoPageRoutingModule {
+};
+ServicoPageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
+    })
+], ServicoPageRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/servico/servico.module.ts":
+/*!*******************************************!*\
+  !*** ./src/app/servico/servico.module.ts ***!
+  \*******************************************/
+/*! exports provided: ServicoPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicoPageModule", function() { return ServicoPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+/* harmony import */ var _servico_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./servico-routing.module */ "./src/app/servico/servico-routing.module.ts");
+/* harmony import */ var _servico_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./servico.page */ "./src/app/servico/servico.page.ts");
+
+
+
+
+
+
+
+let ServicoPageModule = class ServicoPageModule {
+};
+ServicoPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+            _servico_routing_module__WEBPACK_IMPORTED_MODULE_5__["ServicoPageRoutingModule"]
+        ],
+        declarations: [_servico_page__WEBPACK_IMPORTED_MODULE_6__["ServicoPage"]]
+    })
+], ServicoPageModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/servico/servico.page.scss":
+/*!*******************************************!*\
+  !*** ./src/app/servico/servico.page.scss ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".cabecalho {\n  border-bottom-left-radius: 20px;\n  border-bottom-right-radius: 20px;\n  height: 60px;\n}\n\nh1 {\n  font-size: 20px;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  text-align: center;\n  margin-top: 30px;\n  margin-bottom: 40px;\n}\n\n.checkbox {\n  margin-left: 20px;\n  margin-top: 20px;\n  margin-bottom: 30px;\n}\n\n.botao {\n  margin-left: 130px;\n  margin-right: 120px;\n  margin-bottom: 30px;\n  border-radius: 20px;\n  background-color: #3979DE;\n}\n\n.texto {\n  font-size: 12;\n  font-weight: bold;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2Vydmljby9DOlxcVXNlcnNcXGZlcm5hXFxPbmVEcml2ZVxcRG9jdW1lbnRvc1xcR2l0SHViXFxwZXJmaWwvc3JjXFxhcHBcXHNlcnZpY29cXHNlcnZpY28ucGFnZS5zY3NzIiwic3JjL2FwcC9zZXJ2aWNvL3NlcnZpY28ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksK0JBQUE7RUFDQSxnQ0FBQTtFQUNBLFlBQUE7QUNDSjs7QURHQTtFQUNJLGVBQUE7RUFDQSx5Q0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNBSjs7QURHQTtFQUNJLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0VBQ0EseUJBQUE7QUNBSjs7QURFQTtFQUNJLGFBQUE7RUFDQSxpQkFBQTtFQUNBLFlBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3NlcnZpY28vc2Vydmljby5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FiZWNhbGhve1xyXG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMjBweDtcclxuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAyMHB4O1xyXG4gICAgaGVpZ2h0OiA2MHB4O1xyXG4gICAgXHJcbn1cclxuXHJcbmgxe1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA0MHB4O1xyXG59XHJcblxyXG4uY2hlY2tib3h7XHJcbiAgICBtYXJnaW4tbGVmdDogMjBweDtcclxuICAgIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAzMHB4O1xyXG59XHJcblxyXG4uYm90YW97XHJcbiAgICBtYXJnaW4tbGVmdDogMTMwcHg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDEyMHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMzBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzk3OURFO1xyXG59XHJcbi50ZXh0b3tcclxuICAgIGZvbnQtc2l6ZTogMTI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiB3aGl0ZTsgICAgXHJcbn1cclxuIiwiLmNhYmVjYWxobyB7XG4gIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDIwcHg7XG4gIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAyMHB4O1xuICBoZWlnaHQ6IDYwcHg7XG59XG5cbmgxIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogMzBweDtcbiAgbWFyZ2luLWJvdHRvbTogNDBweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG59XG5cbi5ib3RhbyB7XG4gIG1hcmdpbi1sZWZ0OiAxMzBweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMjBweDtcbiAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzM5NzlERTtcbn1cblxuLnRleHRvIHtcbiAgZm9udC1zaXplOiAxMjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/servico/servico.page.ts":
+/*!*****************************************!*\
+  !*** ./src/app/servico/servico.page.ts ***!
+  \*****************************************/
+/*! exports provided: ServicoPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicoPage", function() { return ServicoPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ServicoPage = class ServicoPage {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ServicoPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-servico',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./servico.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/servico/servico.page.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./servico.page.scss */ "./src/app/servico/servico.page.scss")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], ServicoPage);
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=servico-servico-module-es2015.js.map

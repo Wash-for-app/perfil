@@ -1,7 +1,8 @@
 {
   "name": "perfil",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
