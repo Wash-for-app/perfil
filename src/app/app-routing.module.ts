@@ -3,11 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '',
-    redirectTo: 'home',
+    redirectTo: 'perfil',
     pathMatch: 'full'
   },
 
-  { path: 'home', loadChildren: () => import('./perfil/perfil').then(m => m.PerfilPageModule) },
+  { path: 'perfil', loadChildren: () => import('./perfil/perfil').then(m => m.PerfilPageModule) },
 
   {
     path: 'busca',
